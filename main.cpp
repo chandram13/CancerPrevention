@@ -7,23 +7,22 @@ class formsofCancer() {
     public static void Bladder{
         preventionForms = [];
         cout << preventionForms
-        symptoms = [asymptomatic: "frequent urination","urination pain",symptomatic:"blood in urine","back pain","pain around pelvic area"];
-        curingMethods = [];
+        symptoms = {{asymptomatic: "frequent urination","urination pain"},{symptomatic:"blood in urine","back pain","pain around pelvic area"}};
+        curingMethods = {asymptomatic: "drink less liquids",""};
 
         for s in symptoms:
-            if s == symptoms[0]:
-            cout << curingMethods[0]
-            if s == symptoms[1]:
-            cout << curingMethods[1]
-            if s == symptoms[2]:
-            cout << curingMethods[2]
+            if s == symptoms[0][0]:
+            cout << curingMethods[asymptomatic[0]]
+            if s == symptoms[0][1]:
+            cout << curingMethods[asymptomatic[1]]
+            if s == symptoms[1][0]:
+            cout << curingMethods[symptomatic[0]]
+            if s == symptoms[1][1]:
+            cout << curingMethods[symptomatic[1]]
+            if s == symptoms[1][2]:
+            cout << curingMethods[symptomatic[2]]
+            else cout << "The patient does not have any of the asymptomatic or symptomatic symptoms. You do not have this form of cancer."
 
-        if userExperiences == symptoms[0]:
-        cout << curingMethods[0]
-        if userExperiences == symptoms[1]:
-        cout << curingMethods[1]
-        if userExperiences == symptoms[2]:
-        cout << curingMethods[2]
 
     };
     public static void Breast{
