@@ -10,7 +10,7 @@ class formsofCancer() {
         symptoms = {{Asymptomatic: "frequent urination","urination pain"},{Symptomatic:"blood in urine","back pain","pain around pelvic area"}};
         curingMethods = {Asymptomatic: "drink less liquids","Drink enough water each day and avoid caffeinated or alcoholic drinks, smoking, or spicy food."},{Symptomatic:"Take a urine test to confirm this condition and take proper medication.","Take enough time to sit throughout the day and seek a physician for a proper diagnosis.","Wear comfortable clothing such as cotton underwear and elastic bottoms or pants."};
         cancerStages = []
-        patientSick = cin >> haveSymptom
+        ispatientSick = cin >> haveSymptom
         if haveSymptom == true;
         try:
         for s in symptoms:
@@ -28,6 +28,7 @@ class formsofCancer() {
 
             catch:
             std::exception cout << "The patient has no apparent symptoms."
+
     };
     public static void Breast{
         preventionForms =["Maintain current weight","Exercise regularly","Don't drink or limit alcohol completely.","Be aware of your health if taking hormone replacement therapy medications.","Breastfeed your children, if you are a recently pregnant female.","If breast cancer is present in your family tree, speak with your physician."];
@@ -45,6 +46,14 @@ class formsofCancer() {
             cout << curingMethods[0][0]
             if s == symptoms[1][0]:
             cout << curingMethods[1][0]
+            if s == symptoms[1][1]:
+            cout << curingMethods[1][2]
+            if s == symptoms[1][2]:
+            cout << curingMethods[0][0]
+            cout << 'With given consultation from physician, do this reccomendation' + curingMethods[1][4] + '.'
+            if s == symptoms[1][3]:
+            cout << curingMethods[0][0]
+            else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk of breast cancer."
 
         cancerStages = []
 
