@@ -1,4 +1,5 @@
 #include <iostream>
+// Marvish Chandra
 
 class formsofCancer() {
 
@@ -106,7 +107,7 @@ class formsofCancer() {
     public static void Gynecologic{
         preventionForms ={};
         std::cout << preventionForms;
-        symptoms = {};
+        symptoms = {Asymptomatic:"General fatigue","Indigestion, nausea, gas, or heartburn","Shortness of breath",Symptomatic:"Abnormal vaginal bleeding or discharge.","Suddenly feeling the sense of bloating, difficult eating, or any back pain.","Immense pelvic pain or pressure.","More frequent urge to urinate combined with constipation.","Itching, buring, pain, or tenderness near the vulva region."};
         curingMethods ={};
     };
     public static void Headneck{
