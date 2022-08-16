@@ -36,9 +36,6 @@ class formsofCancer() {
         if lymphomaCancer = true;
         typelymphoma cout << "Has your doctor diagnosed you with lymphoma cancer?" >> cin lymphomaCancer;
         public Lymphoma();
-        if mesotheliomaCancer = true;
-        typeMesothelioma cout << "Has your doctor diagnosed you with mesothelioma cancer?" >> cin mesotheliomaCancer;
-        public Mesothelioma();
         if myelomaCancer = true;
         typeMyeloma cout << "Has your doctor diagnosed you with myeloma cancer?" >> cin myelomaCancer;
         public Myeloma();
@@ -217,16 +214,35 @@ class formsofCancer() {
         if s == symptoms[1][6]:
         cout << curingMethods[1][1]
         if s == symptoms[1][7]:
-        cout << curingMethods[1][0]
+        cout << curingMethods[1][2]
         if s == symptoms[1][8]:
-
+        cout << curingMethods[1][2]
+        if s == symptoms[1][8]:
+        cout << curingMethods[1][2]
+        if s == symptoms[1][9]:
+        cout << curingMethods[1][2]
+        if s == symptoms[1][10]:
+        cout << curingMethods[1][2]
+        if s == symptoms[1][11]:
+        cout << curingMethods[1][2]
+        if s == symptoms[1][12]:
+        cout << curingMethods[1][3]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of head & neck cancer."
 
     };
     public static void Kidney{
-        preventionForms ={};
+        preventionForms =["Don't smoke or quit smoking, seek help to quit.","Maintain a healthy weight by consuming enough fruits and vegetables.","Maintain your health by exercising frequently."];
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Feeling tired often","Lack of appetite","Common constipation or blockage.",Symptomatic:"Blood found in urine.","Found lump or swelling in the kidney area.","Prolonged back pain or side pain.","Prolonged fever.","Losing weight without awareness."};
+        curingMethods ={Asymptomatic: "Seek a primary physician to assist with your condition.",Symptomatic:"Radical nephrectomy","Conservative nephrectomy","Radiation therapy","Chemotherapy","Immunothereapy","Take targeted drugs including: lnlyta, lenvima, votrient, nexavar, sutent."};
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][2]:
+        cout << curingMethods[0][0]
+        
     };
     public static void Liver{
         preventionForms ={};
@@ -241,12 +257,6 @@ class formsofCancer() {
         curingMethods ={};
     };
     public static void Lymphoma{
-        preventionForms ={};
-        std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
-    };
-    public static void Mesothelioma{
         preventionForms ={};
         std::cout << preventionForms;
         symptoms = {};
