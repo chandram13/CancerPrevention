@@ -58,17 +58,50 @@ class formsofCancer() {
         cancerStages = []
 
     };
-    public static void Cerival{
-        preventionForms ={};
+    public static void Cervical{
+        preventionForms =["Screen regularly with a Pap swear or hrHPV test","Be up to date on your vaccinations.","Have protected sex."];
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Pain in the pelvis","Frequent need to urinate","Pain during urination",Symptomatic:"Unusual bleeding during menustration cycles, after sex, or after menopause.","Leg swelling.","Blood found in one's urine."};
+        curingMethods ={Asymptomatic:"Seek a primary physician or consult a gynecologist.",Symptomatic: "Utilize surgery to remove all presence of cervical cancer. This may involve removing the cervix and other pelvis organs.","Conduct radiation therapy using high-energy X-ray beams.","Use chemotherapy to kill cancer cells throughout entire body. This treatment is done over a period of time.","Targeted therapy using Avastin blocks growth of new blood vessels."};
+        for s in symptoms:
+            if s == symptoms[0][0]:
+            cout << curingMethods[0[0]]
+            if s == symptoms[0][1]:
+            cout << curingMethods[0][0]
+            if s == symptoms[0][2]:
+            cout << curingMethods[0][0]
+            if s == symptoms[1][0]:
+            cout << curingMethods[0][0]
+            if s == symptoms[1][1]:
+            cout << curingMethods[0][0]
+            if s == symptoms[1][2]:
+            cout << curingMethods[1][4]
+            else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk of breast cancer."
+
+        cancerStages = []
+
     };
     public static void Colorectal{
-        preventionForms ={};
+        preventionForms =["Get screened directly with your primary physician routinely from the age 45.","Maintain a healthy diet consisting of fruits and vegetables.","Taking low-dose aspirin medication can prevent this form of cancer in some adults."];
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Weakness and fatigue","Tenderness in one's lower abdomen",Symptomatic:"Blood in or on your stool","The feeling or occurence of diarrhea, constipation, or sense of constipation.","Feelings of abdominal pain, aches, or cramps that are prolonging.","Occurances of weight loss that continue."};
+        curingMethods = {Asymptomatic: "Seek a primary physician.",Symptomatic:"Once past the age of 50, take either a colonoscopy or sigmoidoscopy.","Take a stool test of either gFOBT, FIT, or FIT-DNA."}
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s == curingMethods[1][0]:
+        cout << "If your age is before 50 years old:" + curingMethods[0][0] + "." + curingMethods[1][0] + "However, if your primary physician doesn't need you to get a colonscopy:" + curingMethods[1][1] + "."
+        if s == symptoms[1][1]:
+        cout << "If your age is before 50 years old:" + curingMethods[0][0] + "." + curingMethods[1][0];
+        if s == symptoms[1][2]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][3]:
+        cout << curingMethods[0][0]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk of Colorectal cancer."
+
+    cancerStages = []
     };
     public static void Gynecologic{
         preventionForms ={};
