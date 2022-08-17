@@ -273,47 +273,165 @@ class formsofCancer() {
         cout << curingMethods[0][4]
         if s == symptoms[1][4]:
         cout << curingMethods[0][4]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of liver cancer."
+
     };
     public static void Lung{
         preventionForms =["Maintain a healthy weight by having a good diet consisting of fruits and vegetables.","Don't smoke, or consult help to quit.","Avoid drinking hard or alcoholic drinks.","Maintain your health by exercising frequently.";]
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Chest pain that worsens when you breath, laugh, or cough.","Hoarseness","Wheezing","Weakness and fatigue","Loss of appetite and weight loss","Shoulder pain",Symptomatic:"Coughing up phlegm or blood","Lumps in the neck or collarbone","Dizziness","Numbness in arms or legs","Jaundice","Swelling of the face and upper body"};
+        curingMethods ={Asymptomatic:"Massage","Acupuncture","Mediation & yoga","Seek a physician for a consultation.",Symptomatic:"Get surgery to remove the tumor.","Chemotherapy or radation treatment to kill cancerous cells.","Varying stages of NSCLSC (non-small cell lung cancer)"};
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][3]
+        if s == symptoms[0][2]:
+        cout << curingMethods[0][3]
+        if s == symptoms[0][3]:
+        cout << curingMethods[0][2]
+        if s == symptoms[0][4]:
+        cout << curingMethods[0][3]
+        if s == symptoms[0][5]:
+        cout << curingMethods[0][1]
+        if s == symptoms[1][0]:
+        cout << curingMethods[0][3]
+        if s == symptoms[1][1]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][2]:
+        cout << curingMethods[0][2]
+        if s == symptoms[1][3]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][4]:
+        cout << curingMethods[0][3]
+        if s == symptoms[1][5]:
+        cout << curingMethods[0][3]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of lung cancer."
+
     };
     public static void Lymphoma{
-        preventionForms ={};
+        preventionForms =["Maintain a healthy weight by having a good diet consisting of fruits and vegetables.","Maintain your health by exercising frequently."];
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"chills","cough","fatigue","fever","night sweats","shortness of breath","skin itching","loss of appetite","unexplained weight loss",Symptomatic:"Enlarged spleen","itchy rash","stomach pain"};
+        curingMethods ={Asymptomatic:"Seek a physician to consult your condition.",Symptomatic:"Seek a hematologist to specialize in blood, bone marrow, and immune cell discorders.","Seek a oncologist to treat cancerous tumors.","Seek a pathologist to assist with your symptoms."}
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][2]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][3]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][4]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][5]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][6]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][7]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][8]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][0]:
+        cout << curingMethods[1][0]
+        if s  == symptoms[1][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][2]:
+        cout << curingMethods[1][2]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of lymphoma cancer."
+
     };
     public static void Myeloma{
-        preventionForms ={};
+        preventionForms =["Maintain a healthy weight by having a good diet consisting of fruits and vegetables.","Maintain your health by exercising frequently."];
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Weakness in the legs","Unintentional weight loss","Confusion","Problems with urination","Nausea","Vomiting","Repeated infections","Vision loss",Symptomatic:"High levels of calcium","Kidney failure","Anemia","Bone damage"};
+        curingMethods ={Asymptomatic:"Consult a physician to consult your condition.","Acupuncture","Aromatherapy","Massage","Mediatation","Relaxation methods","Consult an optometrist immediately.",Symptomatic:"Targeted therapy","Biological therapy","Chemotherapy","Corticosteroids","Radiation therapy","Stem cell transplants"};
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][2]:
+        cout << curingMethods[0][2]
+        if s == symptoms[0][3]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][4]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][5]:
+        cout << curingMethods[0][5]
+        if s == symptoms[0][6]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][7]:
+        cout << curingMethods[0][6]
+        if s == symptoms[1][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][2]:
+        cout << curingMethods[1][1]
+        if s == symptoms[1][3]:
+        cout << curingMethods[1][5]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of myeloma cancer."
+
     };
     public static void Ovarian{
-        preventionForms ={};
+        preventionForms =["Taking birth control medication","After giving birth to a child","Breastfeeding occurances","Tubal ligation (getting tubes tied)","Hysterectomy"];
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Lower back pain","Pain during intercourse","Constipation","Indigestion","Fatigue","Menstrual cycle changes","Weight gain","Weight loss","Vaginal bleeding","Acne","Worsening back pain",Symptomatic:"Frequent bloating","Quickly getting full after eating","Difficulty eating","Frequent urges to urinate","Pain towards abdomen or pelvis"};
+        curingMethods ={Asymptomatic:"Seek a physician to consult your condition.","Seek home treatment.",Symptomatic:"Conduct surgery to confirm the diagnosis, treat stage of cancer, and remove the cancer's presence.","Take advanced ovarian cancer surgery to remove the further stages of cancer.","Do chemotherapy which confirms after surgery."};
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][2]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][3]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][4]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][5]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][6]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][7]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][8]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][9]:
+        cout << curingMethods[0][1]
+        if s == symptoms[0][10]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][0]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][1]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][2]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][3]:
+        cout << curingMethods[0][1]
+        if s == symptoms[1][4]:
+        cout << curingMethods[1][2]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of ovarian cancer."
+
     };
     public static void Prostate{
-        preventionForms ={};
+        preventionForms =[];
         std::cout << preventionForms;
-        symptoms = {};
+        symptoms = {Asymptomatic:"",Symptomatic:""};
         curingMethods ={};
     };
     public static void Uterine{
-        preventionForms ={};
+        preventionForms = [];
         std::cout << preventionForms;
-        symptoms = {};
+        symptoms = {Asymptomatic:"",Symptomatic:""};
         curingMethods ={};
     };
     public static void Vaginal&vulvar{
-        preventionForms ={};
+        preventionForms =[];
         std::cout << preventionForms;
-        symptoms = {};
+        symptoms = {Asymptomatic:"",Symptomatic:""};
         curingMethods ={};
     };
     return 0;
