@@ -417,22 +417,87 @@ class formsofCancer() {
 
     };
     public static void Prostate{
-        preventionForms =[];
+        preventionForms =["Maintain a healthy weight by having a good diet consisting of fruits and vegetables.","Maintain your health by exercising frequently."];
         std::cout << preventionForms;
-        symptoms = {Asymptomatic:"",Symptomatic:""};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Sexual problems including erectile dysfunction","Pain and numbness in the legs and feet.",Symptomatic:"Difficulty starting urination.","Weak or interrupted flow of urine.","Urinating often, especially at night.","Trouble emptying the bladder completely.","Pain or burning during urination.","Blood in the urine or semen.","Pain in the back, hips, or pelvis that doesn't go away.","Painful ejaculation."};
+        curingMethods ={Asymptomatic:"Conduct observation on your symptoms before approaching a physician.",Symptomatic:"Expectant management including active surveillance (active biopsies) and watchful waiting when symptoms develop.","Conduct prostatectomy for doctors to remove the prostate.","Conduct radiation therapy to kill the cancer using either external radiation therapy or internal radiation therapy."};
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][0]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][1]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][2]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][3]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][4]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][5]:
+        cout << curingMethods[1][1]
+        if s == symptoms[1][6]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][7]:
+        cout << curingMethods[0][0]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of prostate cancer."
+
     };
     public static void Uterine{
-        preventionForms = [];
+        preventionForms = ["Maintain a healthy weight by having a good diet consisting of fruits and vegetables.","Maintain your health by exercising frequently.","Seek a physician to consult your condition.","Seek a physician to get an opinion about hormone therapy and if contraceptives are appropriate."];
         std::cout << preventionForms;
-        symptoms = {Asymptomatic:"",Symptomatic:""};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Watery or blood-tinged vaginal discharge","Pain in the lower abdomen or pelvis","Pain during sex","Unintentional weight loss",Symptomatic:"Changes in the length or heaviness of menstrual periods","Vaginal bleeding or spotting between menstrual periods","Vaginal bleeding after menopause"};
+        curingMethods ={Asymptomatic:"Hormone therapy","Emotional support","Seek a physician to consult your condition.",Symptomatic:"Conduct hysterectomy surgery to remove the uterus.","Conduct radiation therapy to kill cancer cells whether externally or internally.","Apply chemotherapy that uses drugs to kill cancerous cells.","Targeted therapy and immunotherapy to target cancer cells."};
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][2]
+        if s == symptoms[0][2]:
+        cout << curingmethods[0][1]
+        if s == symptoms[0][3]:
+        cout << curingMethods[0][2]
+        if s == symptoms[1][0]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][1]:
+        cout << curingMethods[0][2]
+        if s == symptoms[1][2]:
+        cout << curingMethods[1][3]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of uterine cancer."
+
     };
     public static void Vaginal&vulvar{
-        preventionForms =[];
+        preventionForms =["Take active steps towards having protected sex (vaginal, oral, or anal) and get the HPV vaccine.","Don't smoke, or consult help to quit.","Avoid drinking hard or alcoholic drinks."];
         std::cout << preventionForms;
-        symptoms = {Asymptomatic:"",Symptomatic:""};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Constipation","Back pain","Swollen legs",Symptomatic:"Vaginal bleeding.","Vaginal discharge","Pelvic pain, especially during sex.","A lump or mass in the vagina.","Constant itchiness in the vagina.","Blood in stool or urine.","Changes in the color of the skin of the vulva, so that it looks redder or whiter than normal.","Skin changes in the vulva, including appearance of a rash or warts."};
+        curingMethods ={Asyptomatic:"Seek a physician to consult your condition.",Symptomatic:"Conduct surgery to remove the tumor and around the cancerous area.","For most cases, utilize radiotherapy to treat all stages of vaginal cancer.","An alternative is chemotherapy which targets cancerous cells, however, can damage healthy cells too."};
+        for s in symptoms:
+        if s in symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s in symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s in symptoms[0][2]:
+        cout << curingMethods[0][0]
+        if s in symptoms[1][0]:
+        cout << curingMethods[0][0]
+        if s in symptoms[1][1]:
+        cout << curingMethods[0][0]
+        if s in symptoms[1][2]:
+        cout << curingMethods[0][0]
+        if s in symptoms[1][3]:
+        cout << curingMethods[1][0]
+        if s in symptoms[1][4]:
+        cout << curingMethods[0][0]
+        if s in symptoms[1][5]:
+        cout << curingMethods[0][0]
+        if s in symptoms[1][6]:
+        cout << curingMethods[1][1]
+        if s in symptoms[1][7]:
+        cout << curingMethods[1][2]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of uterine cancer."
+
     };
     return 0;
 }
