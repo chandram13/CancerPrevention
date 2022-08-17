@@ -45,17 +45,11 @@ class formsofCancer() {
         if prostateCancer = true;
         typeProstate cout << "Has your doctor diagnosed you with prostate cancer?" >> cin prostateCancer;
         public Prostate();
-        if skinCancer = true;
-        typeSkin cout << "Has your doctor diagnosed you with liver cancer?" >> cin skinCancer;
-        public Skin();
-        if thyroidCancer = true;
-        typeThyroid cout << "Has your doctor diagnosed you with liver cancer?" >> cin thyroidCancer;
-        public Thyroid();
         if uterineCancer = true;
-        typeUterine cout << "Has your doctor diagnosed you with liver cancer?" >> cin uterineCancer;
+        typeUterine cout << "Has your doctor diagnosed you with uterine cancer?" >> cin uterineCancer;
         public Uterine();
         if vaginal&vulvarCancer = true;
-        typevaginal&vulvarCancer cout << "Has your doctor diagnosed you with liver cancer?" >> cin vaginal&vulvarCancer;
+        typevaginal&vulvarCancer cout << "Has your doctor diagnosed you with vaginal and vulvar cancer?" >> cin vaginal&vulvarCancer;
         public Vaginal&vulvar();
 
     }
@@ -242,16 +236,46 @@ class formsofCancer() {
         cout << curingMethods[0][0]
         if s == symptoms[0][2]:
         cout << curingMethods[0][0]
-        
+        if s == symptoms[1][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][1]:
+        cout << curingMethods[1][1]
+        if s == symptoms[1][2]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][3]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][4]:
+        cout << curingMethods[1][4]
+        else: cout << "If the patient doesn't have any of the asymptomatic or symptomatic symptoms, inform the patient that they are not at risk any forms of kidney cancer."
+
     };
     public static void Liver{
-        preventionForms ={};
+        preventionForms =["Maintain a healthy weight by having a good diet consisting of fruits and vegetables.","Get vaccinated for Hepatitis B & C.","Don't smoke, or consult help to quit.","Avoid drinking hard or alcoholic drinks."];
         std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
+        symptoms = {Asymptomatic:"Easy bruising or bleeding.","Feeling fatigued for no reason.","Having a sudden loss of appetite.","Unexpected weight loss.",Symptomatic: "Discomfort in the upper abdomen, specifically the right side.","A swollen abdomen.","A hard lump near the right side rib cage.","Pain near the right shoulder blade.","Having symptoms of Jaundice"};
+        curingMethods ={Asymptomatic:"Maintain a healthy weight by eating fruits and vegetables.","Get vaccinated against Hepatitis B & C.","Don't smoke or seek help to quit smoking.","Avoid hard or alcoholic drinks to prevent hurting your liver.","Consult a doctor for a consultation.",Symptomatic:"Partial hepatectomy","Liver transplant","Ablation","Radiation therapy","Targeted therapy","Embolization, chemoembolization, and radioembolization","Chemotherapy","Immunotherapy"};
+        for s in symptoms:
+        if s == symptoms[0][0]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][1]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][2]:
+        cout << curingMethods[0][0]
+        if s == symptoms[0][3]:
+        cout << curingMethods[0][0]
+        if s == symptoms[1][0]:
+        cout << curingMethods[0][4]
+        if s == symptoms[1][1]:
+        cout << curingMethods[0][4]
+        if s == symptoms[1][2]:
+        cout << curingMethods[1][0]
+        if s == symptoms[1][3]:
+        cout << curingMethods[0][4]
+        if s == symptoms[1][4]:
+        cout << curingMethods[0][4]
     };
     public static void Lung{
-        preventionForms ={};
+        preventionForms =["Maintain a healthy weight by having a good diet consisting of fruits and vegetables.","Don't smoke, or consult help to quit.","Avoid drinking hard or alcoholic drinks.","Maintain your health by exercising frequently.";]
         std::cout << preventionForms;
         symptoms = {};
         curingMethods ={};
@@ -275,18 +299,6 @@ class formsofCancer() {
         curingMethods ={};
     };
     public static void Prostate{
-        preventionForms ={};
-        std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
-    };
-    public static void Skin{
-        preventionForms ={};
-        std::cout << preventionForms;
-        symptoms = {};
-        curingMethods ={};
-    };
-    public static void Thyroid{
         preventionForms ={};
         std::cout << preventionForms;
         symptoms = {};
