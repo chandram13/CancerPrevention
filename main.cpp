@@ -61,7 +61,6 @@ class formsofCancer() {
         cancerStages = []
         ispatientSick = cin >> haveSymptom
         if haveSymptom == true;
-        try:
         for s in symptoms:
             if s == symptoms[0][0]:
             cout << curingMethods[0][0]
@@ -74,9 +73,6 @@ class formsofCancer() {
             if s == symptoms[1][2]:
             cout << curingMethods[1][2]
             else cout << "The patient does not have any of the asymptomatic or symptomatic symptoms. You do not have this form of cancer."
-
-            catch:
-            std::exception cout << "The patient has no apparent symptoms."
 
     };
     public static void Breast{
